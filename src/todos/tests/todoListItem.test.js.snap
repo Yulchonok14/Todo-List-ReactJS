@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoListItem renders correctly 1`] = `
+<div
+  className="sc-bdfBQB sc-gsTEea eiDaAo gLltEE"
+>
+  <h3 />
+  <p>
+    Created at: 
+    Invalid Date
+  </p>
+  <div
+    className="sc-hKgJUU eSVIjD"
+  >
+    <button
+      className="sc-dlfnuX sc-jSgvzq gVyZRT iCLYda"
+      onClick={[Function]}
+    >
+      Mark As Completed
+    </button>
+    <button
+      className="sc-dlfnuX sc-eCstlR gVyZRT hwrRjV"
+      onClick={[Function]}
+    >
+      Remove
+    </button>
+  </div>
+</div>
+`;
