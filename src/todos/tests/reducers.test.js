@@ -1,6 +1,9 @@
 /* eslint-env mocha */
 import { expect } from 'chai';
 import todosReducer from '../reducers';
+import {
+  LOAD_TODOS_FAIL_ERROR, CREATE_TODO_FAIL_ERROR, REMOVE_TODO_FAIL_ERROR, COMPLETE_TODO_FAIL_ERROR,
+} from '../todos.constants';
 
 describe('The todos reducer', () => {
   it('adds a new todo when CREATE_TODO action is received', () => {
@@ -14,11 +17,30 @@ describe('The todos reducer', () => {
     };
     const initialState = {
       isLoading: false,
+      error: '',
       data: [],
     };
     const expected = {
       isLoading: false,
+      error: '',
       data: [fakeTodo],
+    };
+    const actual = todosReducer(initialState, action);
+
+    expect(actual).to.deep.equal(expected);
+  });
+
+  it('adds an error when CREATE_TODO_FAIL action is received', () => {
+    const action = { type: 'CREATE_TODO_FAIL' };
+    const initialState = {
+      isLoading: false,
+      error: '',
+      data: [],
+    };
+    const expected = {
+      isLoading: false,
+      error: CREATE_TODO_FAIL_ERROR,
+      data: [],
     };
     const actual = todosReducer(initialState, action);
 
@@ -38,9 +60,28 @@ describe('The todos reducer', () => {
     const initialState = {
       isLoading: false,
       data: [fakeTodo],
+      error: '',
     };
     const expected = {
       isLoading: false,
+      data: [],
+      error: '',
+    };
+    const actual = todosReducer(initialState, action);
+
+    expect(actual).to.deep.equal(expected);
+  });
+
+  it('adds an error when REMOVE_TODO_FAIL action is received', () => {
+    const action = { type: 'REMOVE_TODO_FAIL' };
+    const initialState = {
+      isLoading: false,
+      error: '',
+      data: [],
+    };
+    const expected = {
+      isLoading: false,
+      error: REMOVE_TODO_FAIL_ERROR,
       data: [],
     };
     const actual = todosReducer(initialState, action);
@@ -85,10 +126,29 @@ describe('The todos reducer', () => {
     const initialState = {
       isLoading: false,
       data: fakeTodos,
+      error: '',
     };
     const expected = {
       isLoading: false,
       data: fakeExpectedTodos,
+      error: '',
+    };
+    const actual = todosReducer(initialState, action);
+
+    expect(actual).to.deep.equal(expected);
+  });
+
+  it('adds an error when COMPLETE_TODO_FAIL action is received', () => {
+    const action = { type: 'COMPLETE_TODO_FAIL' };
+    const initialState = {
+      isLoading: false,
+      error: '',
+      data: [],
+    };
+    const expected = {
+      isLoading: false,
+      error: COMPLETE_TODO_FAIL_ERROR,
+      data: [],
     };
     const actual = todosReducer(initialState, action);
 
@@ -102,10 +162,12 @@ describe('The todos reducer', () => {
     const initialState = {
       isLoading: false,
       data: [],
+      error: '',
     };
     const expected = {
       isLoading: true,
       data: [],
+      error: '',
     };
     const actual = todosReducer(initialState, action);
 
@@ -125,10 +187,12 @@ describe('The todos reducer', () => {
     const initialState = {
       isLoading: false,
       data: [],
+      error: '',
     };
     const expected = {
       isLoading: false,
       data: [fakeTodo],
+      error: '',
     };
     const actual = todosReducer(initialState, action);
 
@@ -141,11 +205,13 @@ describe('The todos reducer', () => {
     };
     const initialState = {
       isLoading: false,
+      error: '',
       data: [],
     };
     const expected = {
       isLoading: false,
       data: [],
+      error: LOAD_TODOS_FAIL_ERROR,
     };
     const actual = todosReducer(initialState, action);
 
@@ -164,10 +230,12 @@ describe('The todos reducer', () => {
     const initialState = {
       isLoading: false,
       data: [fakeTodo],
+      error: '',
     };
     const expected = {
       isLoading: false,
       data: [fakeTodo],
+      error: '',
     };
     const actual = todosReducer(initialState, action);
 
@@ -181,6 +249,7 @@ describe('The todos reducer', () => {
     const expected = {
       data: [],
       isLoading: false,
+      error: '',
     };
     const actual = todosReducer(undefined, action);
 

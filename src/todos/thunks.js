@@ -5,6 +5,9 @@ import {
   loadTodosLoading,
   loadTodosSuccess,
   removeTodo,
+  createTodoFail,
+  removeTodoFail,
+  completeTodoFail,
 } from './actions';
 
 export const loadTodos = () => async (dispatch) => {
@@ -31,7 +34,7 @@ export const addNewTodoRequest = (text) => async (dispatch) => {
     const newTodo = await result.json();
     dispatch(createTodo(newTodo));
   } catch (e) {
-    alert(e);
+    dispatch(createTodoFail());
   }
 };
 
@@ -43,7 +46,7 @@ export const removeTodoRequest = (id) => async (dispatch) => {
     const todo = await result.json();
     dispatch(removeTodo(todo));
   } catch (e) {
-    alert(e);
+    dispatch(removeTodoFail());
   }
 };
 
@@ -55,6 +58,6 @@ export const completedTodoRequest = (id) => async (dispatch) => {
     const todo = await result.json();
     dispatch(completeTodo(todo));
   } catch (e) {
-    alert(e);
+    dispatch(completeTodoFail());
   }
 };

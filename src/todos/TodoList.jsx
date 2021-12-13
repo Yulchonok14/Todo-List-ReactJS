@@ -43,7 +43,7 @@ const TodoList = ({
         todos={todos}
         onCreateNewTodoClicked={onCreateNewTodoClicked}
       />
-      <h3>Incompleted:</h3>
+      <h3 className="title incomplete">Incompleted:</h3>
       {incompletedTodos.map((todo) => (
         <TodoListItem
           key={todo.id}
@@ -52,7 +52,7 @@ const TodoList = ({
           todo={todo}
         />
       ))}
-      <h3>Completed:</h3>
+      <h3 className="title complete">Completed:</h3>
       {completedTodos.map((todo) => (
         <TodoListItem
           key={todo.id}
@@ -82,4 +82,4 @@ const mapDispatchToProps = (dispatch) => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
 
-// export { TodoList };
+export { TodoList };

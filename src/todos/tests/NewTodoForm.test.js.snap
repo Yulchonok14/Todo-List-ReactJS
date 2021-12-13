@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewTodoForm renders correctly 1`] = `
+<div
+  className="sc-bdfBQB hpKxwM"
+>
+  <input
+    className="sc-gsTEea NRtLr"
+    onChange={[Function]}
+    placeholder="Type new todo item here"
+    value=""
+  />
+  <button
+    className="sc-dlfnuX eOyWug"
+    onClick={[Function]}
+  >
+    Craft Todo
+  </button>
+</div>
+`;

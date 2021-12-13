@@ -2,7 +2,7 @@
 
 exports[`TodoListItem renders correctly 1`] = `
 <div
-  className="sc-bdfBQB sc-gsTEea eiDaAo gLltEE"
+  className="sc-hKgJUU sc-eCstlR kMigaP hlAxGi"
 >
   <h3 />
   <p>
@@ -10,16 +10,16 @@ exports[`TodoListItem renders correctly 1`] = `
     Invalid Date
   </p>
   <div
-    className="sc-hKgJUU eSVIjD"
+    className="sc-gKseQn jwGGfw"
   >
     <button
-      className="sc-dlfnuX sc-jSgvzq gVyZRT iCLYda"
+      className="sc-jSgvzq sc-fubCzh dFYixR llQoPR"
       onClick={[Function]}
     >
       Mark As Completed
     </button>
     <button
-      className="sc-dlfnuX sc-eCstlR gVyZRT hwrRjV"
+      className="sc-jSgvzq sc-iBPTik dFYixR bfvxIP"
       onClick={[Function]}
     >
       Remove

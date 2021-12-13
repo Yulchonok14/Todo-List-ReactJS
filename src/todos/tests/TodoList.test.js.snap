@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList renders correctly 1`] = `
+<div
+  className="sc-pGacB hvzgvV"
+>
+  <div
+    className="sc-bdfBQB hpKxwM"
+  >
+    <input
+      className="sc-gsTEea NRtLr"
+      onChange={[Function]}
+      placeholder="Type new todo item here"
+      value=""
+    />
+    <button
+      className="sc-dlfnuX eOyWug"
+      onClick={[Function]}
+    >
+      Craft Todo
+    </button>
+  </div>
+  <h3
+    className="title incomplete"
+  >
+    Incompleted:
+  </h3>
+  <div
+    className="sc-hKgJUU sc-eCstlR kMigaP hlAxGi"
+  >
+    <h3>
+      Go to the cinema
+    </h3>
+    <p>
+      Created at: 
+      Invalid Date
+    </p>
+    <div
+      className="sc-gKseQn jwGGfw"
+    >
+      <button
+        className="sc-jSgvzq sc-fubCzh dFYixR llQoPR"
+        onClick={[Function]}
+      >
+        Mark As Completed
+      </button>
+      <button
+        className="sc-jSgvzq sc-iBPTik dFYixR bfvxIP"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-hKgJUU sc-eCstlR kMigaP hlAxGi"
+  >
+    <h3>
+      Go to the theater
+    </h3>
+    <p>
+      Created at: 
+      Invalid Date
+    </p>
+    <div
+      className="sc-gKseQn jwGGfw"
+    >
+      <button
+        className="sc-jSgvzq sc-fubCzh dFYixR llQoPR"
+        onClick={[Function]}
+      >
+        Mark As Completed
+      </button>
+      <button
+        className="sc-jSgvzq sc-iBPTik dFYixR bfvxIP"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+  <h3
+    className="title complete"
+  >
+    Completed:
+  </h3>
+  <div
+    className="sc-hKgJUU kMigaP"
+  >
+    <h3>
+      Go to the skating ring
+    </h3>
+    <p>
+      Created at: 
+      Invalid Date
+    </p>
+    <div
+      className="sc-gKseQn jwGGfw"
+    >
+      <button
+        className="sc-jSgvzq sc-iBPTik dFYixR bfvxIP"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-hKgJUU kMigaP"
+  >
+    <h3>
+      Meet with friends
+    </h3>
+    <p>
+      Created at: 
+      Invalid Date
+    </p>
+    <div
+      className="sc-gKseQn jwGGfw"
+    >
+      <button
+        className="sc-jSgvzq sc-iBPTik dFYixR bfvxIP"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+</div>
+`;
