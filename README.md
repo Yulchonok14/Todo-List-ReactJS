@@ -2,6 +2,7 @@
 
 ReactJS app to display todo list of incompleted and completed items with a form to create a new one. 
 The items which were created more than 8 days ago are highlighted in red.
+Implemented unit tests using Mocha, Chai, Enzyme.
 
 ## Server
 
